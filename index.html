@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="styles.css">
+    <script src="myscripts.js"></script>
+<head>
+    <title>Password Generator</title>
+</head>
+<body>
+    <div id = "inputSection">
+        <h1 id = "title">Password Generator</h1>
+        <table>
+        <tr>
+            <td id = "left">
+                <text>Minimum Word Length (1-14)</text>
+            </td>
+            <td>
+                <input onchange = "checkValidPasswordLengthInput()" type="number" id = "minWordLength" value="1" size="40" min = "1" max = "14">
+            </td>
+        </tr>
+        <tr>
+            <td id = "left">
+                <text>Maximum Word Length (1-14)</text>
+            </td>
+            <td>
+                <input onchange = "checkValidPasswordLengthInput()" type="number" id = "maxWordLength" value="4" size="40" min = "1" max = "14">
+            </td>
+        </tr>
+        <tr>
+            <td id = "left">
+                <text>Max Length (1-100)</text>
+            </td>
+            <td>
+                <input onchange = "checkValidPasswordLengthInput()" type="number" id = "maxLength" value="10" size="40" min = "1" max = "100">
+            </td>
+        </tr>
+        <tr>
+            <td id = "left">
+                <text>Number of Passwords (1-100)</text>
+            </td>
+            <td>
+                <input onchange="checkValidNumberOfPasswordInput()" type= "number" id = "numOfPasswords" value ="10" size= "40" min = "1" max = "1000">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td id = "right">
+                <label class="container">
+                    <input type="checkbox" id = "easyTyping" value="">Easy Typing (words with repeating characters)<br />
+                    <span class="checkmark"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td id = "right">
+                <input type="checkbox" id = "numberSubstitutions" value="">Number Substitutions (replace letters with numbers)<br />
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td id = "right">
+                <button onclick="createPasswords()">Submit</button>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div>
+        <table id = "passwordTable"></table>
+    </div>
+    
+</body>
+</html>

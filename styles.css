@@ -1,0 +1,53 @@
+#inputSection{
+    text-align: center;
+}
+
+#title{
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+td#left {
+    text-align: right;
+    font-weight: bold;
+}
+
+td#right {
+    text-align: left;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=number]{
+    width: 100%;
+}
+
+#passwordTable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+#passwordTable td, #passwordTable th {
+border: 1px solid #ddd;
+padding: 8px;
+}
+
+#passwordTable tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#passwordTable tr:hover {
+    background-color: #ddd;
+}
+
+#passwordTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: black;
+    color: white;
+}
